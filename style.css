@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #c8c8c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 1100px;
+    height: 440px;
+    background-color: #fff;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+img
+{
+    width: 100%;
+    display: block;
+}
+.card-left
+{
+    width:600px;
+    overflow: hidden;
+}
+.card-right
+{
+    padding: 10px;
+}
+.card-right h2
+{
+    font-weight: 400px;
+}
+.card-right h4{
+    font-size: 18px;
+    font-weight: 500px;
+    margin-top: 20px;
+}
+.card-right h4 span
+{
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.2);
+    font-size: 18px;
+    padding-left: 15px;
+}
+.card-right p{
+    margin-top: 15px;
+    color:  rgba(0,0,0,0.5);
+    padding: 10px 0;
+}
+.star
+{
+    display: flex;
+    gap:20px;
+    cursor: pointer;
+}
+.star-group ion-icon
+{
+    color: rgba(4, 1, 1, 0.5);
+
+}
+.star-group ion-icon:nth-child(1),
+.star-group ion-icon:nth-child(2),
+.star-group ion-icon:nth-child(3)
+{
+    color: rgb(215, 183, 0);
+}
+.main-image
+{
+    display: flex;
+    transition: all 0.5s ease;
+}
+.image-select
+{
+    display: flex;
+    margin-top:2px;
+}
+.img
+{
+    border: 2px solid #ffffff;
+}
+.active
+{
+    border-color:rgb(106, 68, 68);
+}
+
+.form
+{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.form-group label,
+.form-group select,
+.form-group .input-group
+{
+    display: block;
+}
+.form-group select
+{
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.input-group
+{
+    display: flex;
+    width: 220px;
+    height: 30px;
+    margin-top: 5px;
+}
+.input-group input
+{
+    width: 50px;
+    height: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.input-group button
+{
+    width: 30px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    color: #c8c8c8;
+    cursor: pointer;
+}
+.btn-cart
+{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #ff8401;
+    font-size: 16px;
+}
